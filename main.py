@@ -65,7 +65,6 @@ separator = "-"*40
 name = input("username: ")
 password = input("password: ")
 print(separator)
-greeting = (f"Hi, welcome to the app, {name.title()}. \nWe have 3 texts to be analysed.")
 
 if name == "bob" and password == "123":
   print(greeting)
