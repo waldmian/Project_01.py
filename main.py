@@ -91,13 +91,13 @@ text_numbers = str(list(paragraphs.keys())[:])
 if not text_nr in text_numbers:
   print("Wrong number / character selected. Terminating the program.")
   sys.exit(0)
-
-    word_count = []
-    word_count_title = []
-    word_count_upper = []
-    word_count_lower = []
-    word_count_numeric = {}
-    sum_digits = []
+    
+word_count = []
+word_count_title = []
+word_count_upper = []
+word_count_lower = []
+word_count_numeric = {}
+sum_digits = []
 
 
   for word in paragraphs[int(text_nr)].split():
