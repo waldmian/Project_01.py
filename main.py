@@ -131,7 +131,7 @@ separate_words = []
 separate_words_length = []
 length_occurence = {}
 
-for word in text_copy.split():
+for word in paragraphs[int(text_nr)].split():
   clean_word = word.strip(",.;")
   separate_words.append(clean_word)
   word_length = []
