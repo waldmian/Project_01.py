@@ -99,8 +99,7 @@ word_count_lower = []
 word_count_numeric = {}
 sum_digits = []
 
-
-  for word in paragraphs[int(text_nr)].split():
+for word in paragraphs[int(text_nr)].split():
     word.strip(",.")
     word_count.append(word)
     if word.istitle():
