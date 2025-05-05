@@ -66,17 +66,17 @@ name = input("username: ")
 password = input("password: ")
 print(separator)
 
-if name == "bob" and password == "123":
+if name in registered_users and registered_users[name] == password:
+  greeting = f"Welcome to the app, {name.title()}. " \
+  f"There are {(len(paragraphs.keys()))} texts to be analysed."
   print(greeting)
-elif name == "ann" and password == "pass123":
-  print(greeting)
-elif name == "mike" and password == "password123":
-  print(greeting)
-elif name == "liz" and password == "pass123":
-  print(greeting)
+
+elif name in registered_users and registered_users[name] != password:
+  print("Wrong password entered. Terminating the program.")
+  sys.exit(0)
+
 else:
   print("Unregistered user. Terminating the program.")
-  import sys
   sys.exit(0)
 
 print(separator)
