@@ -45,6 +45,10 @@ data = """
 | liz  |   pass123   |
 +------+-------------+
 """
+
+import sys
+
+
 separator = "-"*40
 name = input("username: ")
 password = input("password: ")
