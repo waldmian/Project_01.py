@@ -81,17 +81,16 @@ else:
 
 print(separator)
 
-text_nr = int(input("Enter a number btw. 1 and 3 to select: "))
+text_nr = str(input(
+    f"Enter a number btw {(list(paragraphs.keys())[0])} and "
+    f"{(list(paragraphs.keys())[-1])}. \nSelected text nr: "
+))
 print(separator)
-text_numbers = [1, 2, 3]
+text_numbers = str(list(paragraphs.keys())[:])
+
 if not text_nr in text_numbers:
-  print("Wrong number selected. Terminating the program. ")
-  import sys
+  print("Wrong number / character selected. Terminating the program.")
   sys.exit(0)
-else:
-  paragraphs = []
-  for text in TEXTS:
-    paragraphs.append(text)
 
     word_count = []
     word_count_title = []
