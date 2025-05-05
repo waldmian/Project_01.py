@@ -57,6 +57,10 @@ for row in rows:
   password = cleared_row[1].strip()
   registered_users[user] = password
 
+paragraphs = {}
+for nr, text in enumerate(TEXTS,start=1):
+  paragraphs[nr] = text
+
 separator = "-"*40
 name = input("username: ")
 password = input("password: ")
