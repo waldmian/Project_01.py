@@ -100,7 +100,7 @@ if not text_nr in text_numbers:
     sum_digits = []
 
 
-  for word in paragraphs[text_nr - 1].split():
+  for word in paragraphs[int(text_nr)].split():
     word.strip(",.")
     word_count.append(word)
     if word.istitle():
