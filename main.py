@@ -124,9 +124,8 @@ print(f"There are {len(word_count_lower)} lowercase words.")
 print(f"There are {len(word_count_numeric)} numeric strings.")
 print(f"The sum of all the numbers is {sum(sum_digits)}.")
 
-print(separator)
-print("LEN|  OCCURENCES  |NR.")
-print(separator)
+heading = ['LEN', ('OCCURENCES').center(20), 'NR.']
+print(separator, '|'.join(heading), separator, sep="\n")
 
 text_copy = paragraphs[text_nr - 1]
 
