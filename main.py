@@ -48,6 +48,14 @@ data = """
 
 import sys
 
+rows = data.strip().split("\n")[3:-1]
+registered_users = {}
+
+for row in rows:
+  cleared_row = row.strip("|").split("|")
+  user = cleared_row[0].strip()
+  password = cleared_row[1].strip()
+  registered_users[user] = password
 
 separator = "-"*40
 name = input("username: ")
