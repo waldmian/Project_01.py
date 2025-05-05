@@ -127,8 +127,6 @@ print(f"The sum of all the numbers is {sum(sum_digits)}.")
 heading = ['LEN', ('OCCURENCES').center(20), 'NR.']
 print(separator, '|'.join(heading), separator, sep="\n")
 
-text_copy = paragraphs[text_nr - 1]
-
 separate_words = []
 separate_words_length = []
 length_occurence = {}
